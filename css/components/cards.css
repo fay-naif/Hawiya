@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 28px 26px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--gradient-line);
+}
+
+.card:hover { transform: translateY(-4px); border-color: rgba(241, 102, 35, 0.35); }
+
+.card__title { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+.card__text { color: var(--color-muted); font-size: 0.92rem; }

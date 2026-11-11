@@ -1,0 +1,24 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 40px;
+  border: 0;
+  border-radius: var(--radius-md);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+}
+
+.btn--primary {
+  color: #fff;
+  background: var(--gradient-brand);
+  box-shadow: var(--shadow-btn);
+}
+
+.btn--primary:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.btn--primary:active { transform: translateY(0); }
+.btn--block { width: 100%; }
+.btn:disabled { opacity: 0.6; cursor: wait; }

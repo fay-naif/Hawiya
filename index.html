@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="صمم هوية متكاملة لمشروعك خلال دقائق مع ألوان وخطوط واقتراحات احترافية.">
+  <meta name="theme-color" content="#14123a">
+  <title>هُويّة | HAWIYA</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&family=Almarai:wght@400;700&family=Changa:wght@500;700&family=Reem+Kufi:wght@500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo" data-brand-logo>HAWIYA | هُويّة</a>
+
+      <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+        <a href="#home" class="nav__link active">الرئيسية</a>
+        <a href="#services" class="nav__link">الخدمات</a>
+        <a href="#packages" class="nav__link">الباقات</a>
+        <a href="#generator" class="nav__link">مولد الهوية</a>
+        <a href="#reviews" class="nav__link">آراء العملاء</a>
+        <a href="#contact" class="nav__link">تواصل</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="تغيير الوضع">
+          <img src="assets/icons/sun.svg" alt="" width="20" height="20">
+        </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__content reveal">
+        <h1 class="hero__title" data-brand-name>هُويّة</h1>
+        <p class="hero__subtitle">صمم هوية متكاملة لمشروعك خلال دقائق مع ألوان وخطوط واقتراحات احترافية.</p>
+        <a href="#generator" class="btn btn--primary">ابدأ الآن</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section__title reveal">خدماتنا</h2>
+        <div class="grid grid--services">
+          <article class="card reveal"><h3 class="card__title">تصميم الشعارات</h3><p class="card__text">شعارات احترافية تعبر عن هوية مشروعك.</p></article>
+          <article class="card reveal"><h3 class="card__title">الهوية البصرية</h3><p class="card__text">ألوان وخطوط ودليل استخدام متكامل.</p></article>
+          <article class="card reveal"><h3 class="card__title">تصميم السوشال ميديا</h3><p class="card__text">قوالب ومنشورات احترافية.</p></article>
+          <article class="card reveal"><h3 class="card__title">بطاقات الأعمال</h3><p class="card__text">بطاقات تعريف احترافية.</p></article>
+          <article class="card reveal"><h3 class="card__title">دليل الهوية</h3><p class="card__text">ملف متكامل لاستخدام العلامة التجارية.</p></article>
+          <article class="card reveal"><h3 class="card__title">استشارات العلامة التجارية</h3><p class="card__text">توجيهات واقتراحات احترافية.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section" id="packages">
+      <div class="container">
+        <h2 class="section__title reveal">الباقات</h2>
+        <div class="grid grid--packages">
+          <article class="card package reveal">
+            <h3 class="package__name">الباقة الأساسية</h3>
+            <p class="package__price">99 <span>ر.س</span></p>
+            <ul class="package__features"><li>شعار احترافي</li><li>لوحة ألوان</li><li>خطوط مقترحة</li></ul>
+          </article>
+          <article class="card package package--featured reveal">
+            <span class="badge">الأكثر طلبًا</span>
+            <h3 class="package__name">الباقة الاحترافية</h3>
+            <p class="package__price">299 <span>ر.س</span></p>
+            <ul class="package__features"><li>هوية بصرية كاملة</li><li>بطاقة أعمال</li><li>تصميم سوشال ميديا</li></ul>
+          </article>
+          <article class="card package reveal">
+            <h3 class="package__name">الباقة المتقدمة</h3>
+            <p class="package__price">599 <span>ر.س</span></p>
+            <ul class="package__features"><li>هوية متكاملة</li><li>دليل استخدام</li><li>تصاميم احترافية</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Identity generator -->
+    <section class="section" id="generator">
+      <div class="container">
+        <h2 class="section__title reveal">مولد الهوية البصرية</h2>
+
+        <form class="generator card reveal" id="generatorForm" novalidate>
+          <input class="field" id="projectName" type="text" placeholder="اسم المشروع" maxlength="40" required>
+
+          <select class="field" id="activity" required>
+            <option value="" disabled selected>اختار النشاط</option>
+          </select>
+
+          <select class="field" id="style" required>
+            <option value="" disabled selected>نمط الهوية</option>
+          </select>
+
+          <div class="palette-picker">
+            <div class="palette-picker__head">
+              <span class="palette-picker__label">ألوان الهوية</span>
+              <button class="link-btn" id="suggestColors" type="button">✨ اقترح لي ألوان</button>
+            </div>
+            <div class="swatches" id="swatches">
+              <label class="swatch" title="اختاري اللون"><input type="color" value="#f16623" aria-label="اللون الأساسي"><span>الأساسي</span></label>
+              <label class="swatch" title="اختاري اللون"><input type="color" value="#6a3466" aria-label="اللون الثانوي"><span>الثانوي</span></label>
+              <label class="swatch" title="اختاري اللون"><input type="color" value="#f7c948" aria-label="لون اللمسة"><span>اللمسة</span></label>
+              <label class="swatch" title="اختاري اللون"><input type="color" value="#14123a" aria-label="لون الخلفية"><span>الخلفية</span></label>
+            </div>
+          </div>
+
+          <select class="field" id="font">
+            <option value="">الخط (تلقائي حسب النمط)</option>
+          </select>
+
+          <textarea class="field field--area" id="projectDescription" placeholder="وصف مشروعك: وش تقدمين؟ ومين جمهورك؟"></textarea>
+
+          <button class="btn btn--primary btn--block" type="submit">إنشاء الهوية</button>
+          <p class="form__error" id="generatorError" role="alert" hidden></p>
+        </form>
+
+        <h2 class="section__title section__title--sub reveal" id="results">النتائج</h2>
+        <div class="grid grid--results" id="resultsGrid">
+          <article class="card result reveal">
+            <h3 class="card__title">الشعار المقترح</h3>
+            <div class="result__body" id="resultLogo"><span class="placeholder">---</span></div>
+          </article>
+          <article class="card result reveal">
+            <h3 class="card__title">ألوان الهوية</h3>
+            <div class="result__body" id="resultColors"><span class="placeholder">---</span></div>
+          </article>
+          <article class="card result reveal">
+            <h3 class="card__title">الخط المناسب</h3>
+            <div class="result__body" id="resultFont"><span class="placeholder">---</span></div>
+          </article>
+          <article class="card result reveal">
+            <h3 class="card__title">وصف الهوية</h3>
+            <div class="result__body" id="resultDescription"><span class="placeholder">---</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <h2 class="section__title reveal">آراء العملاء</h2>
+        <div class="grid grid--reviews">
+          <article class="card review reveal"><div class="stars" aria-label="5 نجوم">★★★★★</div><p class="card__text">خدمة ممتازة والهوية كانت احترافية جداً.</p></article>
+          <article class="card review reveal"><div class="stars" aria-label="5 نجوم">★★★★★</div><p class="card__text">أفضل تجربة تصميم تعاملت معها.</p></article>
+          <article class="card review reveal"><div class="stars" aria-label="5 نجوم">★★★★★</div><p class="card__text">النتائج فاقت توقعاتي بالكامل.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal">تواصل معنا</h2>
+        <form class="contact card reveal" id="contactForm" novalidate>
+          <input class="field" id="contactName" type="text" placeholder="الاسم" required>
+          <input class="field" id="contactEmail" type="email" placeholder="البريد الإلكتروني" required>
+          <textarea class="field field--area" id="contactMessage" placeholder="اكتب رسالتك" required></textarea>
+          <button class="btn btn--primary btn--block" type="submit">إرسال</button>
+          <p class="form__error" id="contactError" role="alert" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo logo--small" data-brand-logo>HAWIYA | هُويّة</span>
+      <p>© <span id="year"></span> جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils/dom.js"></script>
+  <script src="js/core/identity-engine.js"></script>
+  <script src="js/modules/branding.js"></script>
+  <script src="js/modules/navigation.js"></script>
+  <script src="js/modules/theme.js"></script>
+  <script src="js/modules/reveal.js"></script>
+  <script src="js/modules/generator.js"></script>
+  <script src="js/modules/contact-form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

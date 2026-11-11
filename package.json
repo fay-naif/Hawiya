@@ -1,0 +1,11 @@
+{
+  "name": "hawiya",
+  "version": "1.0.0",
+  "description": "Arabic visual-identity studio website with an identity generator.",
+  "scripts": {
+    "test": "node tests/identity-engine.test.mjs",
+    "start": "npx --yes serve ."
+  },
+  "author": "Fay Naif",
+  "license": "MIT"
+}

@@ -1,0 +1,50 @@
+/* Design tokens — navy & orange gradient palette */
+:root {
+  --navy-900: #0f0d2e;
+  --navy-800: #14123a;
+  --navy-700: #1c1a4a;
+  --navy-600: #262262;
+  --plum-500: #6a3466;
+  --orange-500: #f16623;
+  --orange-400: #f5874f;
+
+  --color-bg: var(--navy-800);
+  --color-surface: var(--navy-700);
+  --color-surface-2: #23205a;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: #f6f3ff;
+  --color-muted: #b9b4d8;
+  --color-primary: var(--orange-500);
+  --color-header: rgba(20, 18, 58, 0.85);
+
+  --gradient-brand: linear-gradient(135deg, var(--orange-500) 0%, var(--plum-500) 55%, var(--navy-600) 100%);
+  --gradient-line: linear-gradient(90deg, var(--navy-600), var(--plum-500), var(--orange-500));
+  --gradient-glow-1: rgba(241, 102, 35, 0.2);
+  --gradient-glow-2: rgba(38, 34, 98, 0.75);
+
+  --font-heading: "Cairo", "Tajawal", sans-serif;
+  --font-body: "Tajawal", "Cairo", sans-serif;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --shadow-btn: 0 10px 26px rgba(241, 102, 35, 0.3);
+
+  --container: 1120px;
+  --header-h: 76px;
+  --transition: 0.25s ease;
+}
+
+[data-theme="light"] {
+  --color-bg: #faf8ff;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1effb;
+  --color-border: rgba(38, 34, 98, 0.1);
+  --color-text: #1c1a4a;
+  --color-muted: #5f5b85;
+  --color-header: rgba(255, 255, 255, 0.9);
+  --gradient-glow-1: rgba(241, 102, 35, 0.12);
+  --gradient-glow-2: rgba(38, 34, 98, 0.08);
+  --shadow-card: 0 10px 28px rgba(38, 34, 98, 0.1);
+}
